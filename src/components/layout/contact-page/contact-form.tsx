@@ -10,7 +10,7 @@ const ContactForm = () => {
     const formData = new FormData(e.currentTarget);
 
     try {
-      const res = await ContactEmail(undefined, formData);
+      const res = await ContactEmail(formData);
       console.log(res);
     } catch (error) {
       console.error("Error:", error);
