@@ -21,7 +21,10 @@ export async function sendMail({ to, name, subject, content }: SendMailProps) {
   try {
 
     const test = await transport.verify();
+
+    
     console.log(test, 'there is transpeort');
+    console.log(name, 'there is name');
 
 
   } catch (error) {

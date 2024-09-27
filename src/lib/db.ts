@@ -1,15 +1,14 @@
 import mongoose from "mongoose";
 
 declare global {
-  let mongoose: any;
+  var mongoose: any; // This must be a `var` and not a `let / const`
 }
 
-const MONGODB_URI = process.env.DATABASE_URL!;
-
+const MONGODB_URI = process.env.MONGODB_URI!;
 
 if (!MONGODB_URI) {
   throw new Error(
-    "Please define the MONGODB_URI environment variable inside .env.local",
+    "Please define the MONGODB_URI environment variable inside .env.local"
   );
 }
 
@@ -41,4 +40,4 @@ async function dbConnect() {
   return cached.conn;
 }
 
-export default dbConnect; 
+export default dbConnect;

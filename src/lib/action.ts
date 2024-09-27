@@ -23,7 +23,6 @@ export async function whiteList(formData: FormData) {
 }
 
 export async function ContactEmail(
-  prevState: string | object | undefined,
   formData: FormData
 ) {
   const data = Object.fromEntries(formData.entries());
