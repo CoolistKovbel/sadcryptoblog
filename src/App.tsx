@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AboutPage from "./pages/About";
+import WelcomePage from "./pages/Welcome";
+import TheContact from "./pages/Contact";
+import MainHeader from "./components/MainHeader";
 
-import MainHeader from "./components/layout/main-header/header";
-import TheWelcome from "./components/TheWelcome";
-import TheAbout from "./components/TheAbout";
-import TheContact from "./components/layout/contact-page/TheContact";
 
 
 function App() {
@@ -12,9 +12,10 @@ function App() {
       <MainHeader />
 
       <Router>
+
         <Routes>
-          <Route path="/" element={<TheWelcome />} />
-          <Route path="/about" element={<TheAbout />} />
+          <Route path="/" element={<WelcomePage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<TheContact />} />
 
         </Routes>
