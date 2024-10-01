@@ -8,7 +8,8 @@ const MainHeader = () => {
   return (
     <header className="p-4">
       <div className="flex items-center justify-between">
-        <h2>CryptoMemeRawr</h2>
+      <h2>CryptoMemeRawr</h2>
+
         <nav className="w-[20%] flex items-center gap-4 p-2 bg-[#444] drop-shadow-lg rounded bg-opacity-10 rounded">
           <a href="#" className="p-2 bg-[#000] hover:bg-[#555]">
             Home

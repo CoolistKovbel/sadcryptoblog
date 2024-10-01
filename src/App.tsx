@@ -3,6 +3,7 @@ import AboutPage from "./pages/About";
 import WelcomePage from "./pages/Welcome";
 import TheContact from "./pages/Contact";
 import MainHeader from "./components/MainHeader";
+import MainFooter from "./components/MainFooter";
 
 
 
@@ -20,6 +21,8 @@ function App() {
 
         </Routes>
       </Router>
+
+      <MainFooter />
     </>
   );
 }
