@@ -4,28 +4,24 @@ import WelcomePage from "./pages/Welcome";
 import TheContact from "./pages/Contact";
 import MainHeader from "./components/MainHeader";
 import MainFooter from "./components/MainFooter";
-import Login from "./pages/Login";
-
-
+import Auth from "./pages/Auth";
 
 function App() {
   return (
-    <>
+    <main className="w-full min-h-screen flex flex-col justify-between">
       <MainHeader />
 
       <Router>
-
         <Routes>
           <Route path="/" element={<WelcomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<TheContact />} />
-          <Route path="/Login" element={<Login />} />
-
+          <Route path="/auth" element={<Auth />} />
+          {/* <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<TheContact />} /> */}
         </Routes>
       </Router>
 
       <MainFooter />
-    </>
+    </main>
   );
 }
 

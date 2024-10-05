@@ -51,12 +51,10 @@ const MainHeader = () => {
           </div>
 
           <div className="flex items-center gap-5">
-            <a href="/login" className="p-2 bg-[#111] hover:bg-[#555]">
-              Login
+            <a href="/auth" className="p-2 bg-[#111] hover:bg-[#555]">
+              authenticate
             </a>
-            <a href="/register" className="p-2 bg-[#111] hover:bg-[#555]">
-              Register
-            </a>
+            
           </div>
         </nav>
       </div>
