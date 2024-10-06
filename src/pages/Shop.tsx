@@ -3,8 +3,8 @@ import React from "react";
 const Shop = () => {
   return (
     <section className="min-h-screen w-full">
-      <header className="bg-[#444] p-4 font-bold">
-        <h2>shop page</h2>
+      <header className="bg-[#444] p-4 text-5xl font-bold">
+        <h2>Shop Page</h2>
       </header>
     </section>
   );

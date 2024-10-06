@@ -3,19 +3,25 @@ import React from "react";
 const About = () => {
   return (
     <section className="min-h-screen w-full">
-      <header className="bg-[#444] p-4 font-bold">
-        <h2>About page</h2>
+      <header className="bg-[#444] p-4 text-5xl font-bold">
+        <h2>About Page</h2>
       </header>
+    
+    <div className="p-4 flex flex-col gap-5 w-[80%] mx-auto">
+        <p>
+            This is one of the worse places to be, you will only want to kill
+            yourself or actually read the posts. Did i forget to mention that this
+            is a blog website where you will be able to read about the latest crypto
+            inovation, protocals, and defi.
+        </p>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
-        dolores cupiditate neque eos magnam in quisquam, nemo reiciendis tenetur
-        nesciunt totam iusto consequatur cum atque necessitatibus beatae ad iste
-        nobis eveniet. Quisquam veritatis earum officiis nulla possimus. Est
-        ipsum consequuntur cupiditate consectetur tempora, ullam alias amet
-        molestias nobis illo placeat?
-      </p>
-      
+        <p>
+            Been looking through many projects, have been through it all, am here to
+            be able to guide or even show you what other possiblity or oppurnity
+            will lie ahead for those who seek. If you enjoy the posts be sure to
+            contact me or leave a comment below.
+        </p>
+    </div>
     </section>
   );
 };

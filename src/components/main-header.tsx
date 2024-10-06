@@ -22,6 +22,7 @@ const MainHeader = () => {
       </div>
 
       <nav className="flex items-center gap-5 p-4">
+
         <a
           href="/about"
           className="bg-[firebrick] p-2 font-bold text-yellow-500 hover:bg-[#F4FAFC] rounded drop-shadow-lg"
@@ -57,7 +58,7 @@ const MainHeader = () => {
               </button>
 
               {toggler && (
-                <nav className="absolute top-[60px] right-4 w-[180px] flex items-center flex-col p-3 gap-4 bg-[#555] rounded drop-shadow-lg">
+                <nav className="absolute top-[60px] right-4 w-[180px] flex items-center flex-col p-3 gap-4 bg-[#555] rounded drop-shadow-lg z-[100]">
                   <a
                     href="#"
                     className="bg-[#444] hover:bg-[#222] p-4 rounded drop-shadow-lg w-full"
