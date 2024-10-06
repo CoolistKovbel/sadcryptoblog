@@ -1,101 +1,94 @@
-import { LoginUser } from "../lib/action";
+const AuthPage = () => {
 
-const Auth = () => {
-  const handleLoginReqest = async (e: any) => {
-    e.preventDefault();
 
-    try {
-      console.log("handle login request");
-      const username = e.target[0].value;
-      const password = e.target[1].value;
-
-      const gg = await LoginUser({
-        username,
-        password,
-      });
-
-      if (gg.status === "success") {
-        console.log("noise");
-      } else {
-        console.log("failed");
-      }
-    } catch (error) {
-      console.log("error");
-    }
-  };
 
   return (
-    <main className="w-full min-h-screen p-10">
-      <div className="bg-[#272727] p-4 rounded drop-shadow-lg flex items-center justify-center flex-col gap-5"></div>
+    <section className="w-full min-h-screen flex flex-col justify-around">
 
-      <div>
-        <h2 className="text-5xl font-bold ">Login Form</h2>
-        <form>
-          <label htmlFor="username">
-            <input type="text" placeholder="username" />
-          </label>
-          <label htmlFor="password">
-            <input type="password" placeholder="password" />
-          </label>
-          <button>Login</button>
-        </form>
+      <div className="w-full flex items-center justify-around p-4">
+
+        <div className="w-[40%] p-4 bg-[#445] rounded drop-shadow-lg">
+          <h2 className="text-2xl font-bold under uppercase">login</h2>
+
+          <form className="flex flex-col items-center gap-5">
+            <label htmlFor="username" className="w-[70%] mx-auto flex items-center justify-between">
+              <span className="text-xl underline text-gray-200">username: </span>
+
+              <input type="text" id="username" name="username"
+              className="bg-[#444] p-2 text-emerald-500 rounded drop-shadow-lg" />
+            </label>
+
+            <label htmlFor="userPassword" className="w-[70%] mx-auto flex items-center justify-between">
+              <span className="text-xl underline text-gray-200">password: </span>
+
+              <input type="password" id="userPassword" name="userPassword"
+              className="bg-[#444] p-2 text-emerald-500 rounded drop-shadow-lg" />
+            </label>
+
+            <button className="bg-[#444] rounded drop-shadow-lg p-3 font-bold uppercase hover:bg-[firebrick]">login</button>
+          </form>
+        </div>
+
+        <div className="w-[40%] p-4 bg-[#445] rounded drop-shadow-lg">
+          <h2 className="text-2xl font-bold under uppercase">register</h2>
+
+          <form className="flex flex-col items-center gap-5">
+            <label htmlFor="username" className="w-[70%] mx-auto flex items-center justify-between">
+              <span className="text-xl underline text-gray-200">username: </span>
+              <input type="text" id="username" name="username"
+              className="bg-[#444] p-2 text-emerald-500 rounded drop-shadow-lg" />
+            </label>
+
+            <label htmlFor="userEmail" className="w-[70%] mx-auto flex items-center justify-between">
+              <span className="text-xl underline text-gray-200">email: </span>
+              <input type="email" id="userEmail" name="userEmail"
+              className="bg-[#444] p-2 text-emerald-500 rounded drop-shadow-lg" />
+            </label>
+
+            <label htmlFor="userAddress" className="w-[70%] mx-auto flex items-center justify-between">
+              <span className="text-xl underline text-gray-200">0xAddress: </span>
+              <input type="text" id="userAddress" name="userAddress"
+              className="bg-[#444] p-2 text-emerald-500 rounded drop-shadow-lg" />
+            </label>
+
+            <label htmlFor="userPassword" className="w-[70%] mx-auto flex items-center justify-between">
+              <span className="text-xl underline text-gray-200">Password: </span>
+              <input type="password" id="userPassword" name="userPassword"
+              className="bg-[#444] p-2 text-emerald-500 rounded drop-shadow-lg" />
+            </label>
+
+            <label htmlFor="userMetaCheckbox" className="w-[70%] mx-auto flex items-center justify-between">
+              <span className="text-xl underline text-gray-200">Connect meta address with account: </span>
+              <input
+                type="checkbox"
+                id="userMetaCheckbox"
+                name="userMetaCheckbox"
+                className="bg-[#444] p-2 text-emerald-500 rounded drop-shadow-lg"
+              />
+            </label>
+
+            <button className="bg-[#444] rounded drop-shadow-lg p-3 font-bold uppercase hover:bg-[firebrick]">register</button>
+          </form>
+        </div>
+
       </div>
 
-      <div>
-        <h2 className="text-5xl font-bold ">Register Form</h2>
-        <form>
-          <label htmlFor="username">
-            <input type="text" placeholder="username" />
-          </label>
-          <label htmlFor="email">
-            <input type="email" placeholder="email" />
-          </label>
-          <label htmlFor="password">
-            <input type="password" placeholder="password" />
-          </label>
-          <label htmlFor="metaAddress">
-            <input type="text" placeholder="metaAddress" />
-          </label>
-
-          <label htmlFor="agreement">
-            <input type="checkbox" name="agreement" id="agreement" />
-          </label>
-
-          <button>register</button>
-        </form>
+      <div className="w-[80%] text-center mx-auto p-5 flex flex-col gap-5 items-center justify-center">
+        <div>
+          <h2>
+            Need a fujcking account. Download my fucking application for fucking
+            free.
+          </h2>
+          <p>MAKE sure you fucking have a web browser.</p>
+          <div className="flex items-center justify-between gap-5">
+            <a href="#">Kill yourself. now.</a>
+            <a href="#">or download and do it yourself</a>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <form
-          onSubmit={handleLoginReqest}
-          className="w-[40%] p-4 bg-[#444] h-[400px] flex flex-col gap-4 items-center justify-center rounded"
-        >
-          <input
-            type="username"
-            placeholder="enter username"
-            className="p-2 bg-[#444] text-emerald-500 rounded drop-shadow-lg"
-          />
-          <input
-            type="password"
-            placeholder="enter password"
-            className="p-2 bg-[#444] text-emerald-500 rounded drop-shadow-lg"
-          />
-          <button className="bg-[#333] rounded font-bold rounded drop-shadow-lg hover:bg-[firebrick] p-4">
-            Enter
-          </button>
-        </form>
-        form
-        <p>
-          🦂 If you don't an account be sure to{" "}
-          <a href="/register" className="underline font-bold">
-            register here
-          </a>
-        </p>
-      </div>
-
-      
-    </main>
+    </section>
   );
 };
 
-export default Auth;
+export default AuthPage;
