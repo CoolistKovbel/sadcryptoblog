@@ -1,10 +1,10 @@
-import React from "react";
+
 
 const Blog = () => {
   return (
     <section className="min-h-screen w-full">
       <header className="bg-[#444] p-4 text-5xl font-bold">
-        <h2>About Page</h2>
+        <h2>Blog Page</h2>
       </header>
       <div className="flex flex-col justify-between h-full gap-5 p-4">
         {/* Category */}
@@ -16,6 +16,7 @@ const Blog = () => {
         </div>
 
         <div className="flex items-center justify-between gap-5 w-[90%] mx-auto p-4 h-[720px] bg-[#566] rounded drop-shadow-lg">
+
           <aside className="flex flex-col gap-5 w-[25%]">
             <a
               href="#"
@@ -56,10 +57,16 @@ const Blog = () => {
           </aside>
 
           <div className="p-4 h-full flex items-start justify-between flex-col bg-[#624]  rounded drop-shadow-lg">
-            <header>
-              <h2 className="text-2xl">death</h2>
-              <p>10-6-24</p>
-              <p>death</p>
+            <header className="flex items-center justify-between">
+
+              <div>
+                <h2 className="text-2xl">death</h2>
+                <p>10-6-24</p>
+                <p>death</p>
+              </div>
+
+              <img src="https://via.placeholder.com/300" alt="blog image" className="w-[300px] h-[300px]" />
+              
             </header>
 
             <p>
@@ -77,6 +84,7 @@ const Blog = () => {
               <a href="#">Read more</a>
             </div>
           </div>
+
         </div>
       </div>
     </section>

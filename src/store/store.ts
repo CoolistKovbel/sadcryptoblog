@@ -26,6 +26,7 @@ export const useStore = create((set) => ({
           metaAddress,
         })
     ),
+    // Possbile
   incrementCount: () => set((state: any) => ({ count: state.count + 1 })),
   decrementCount: () => set((state: any) => ({ count: state.count - 1 })),
   resetCount: () => set({ count: 0 }),
