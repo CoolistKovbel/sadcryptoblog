@@ -4,10 +4,3 @@ A basic crypto blog where you can sign up and join the email list to get the lat
 
 Be sure to share with your friend and family.
 
-
-- [] finish user reg 
-- [] setup user interaction
-- [] add product and admin page
-- [] setup stripe and ethers
-- [] finish ui + logo
-
