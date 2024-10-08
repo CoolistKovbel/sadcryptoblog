@@ -1,6 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const MainHeader = () => {
+interface MainHeaderProps {
+  UserSession: any;
+}
+
+
+const MainHeader = ({UserSession}: MainHeaderProps) => {
+
   const [toggler, setToggler] = useState<boolean>(false);
   const isLoggeed = true;
 

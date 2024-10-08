@@ -5,8 +5,8 @@ import AuthPage from "./pages/Auth.tsx";
 import "./assets/css/tailwind.css";
 import Shop from "./pages/Shop.tsx";
 import About from "./pages/About.tsx";
-import Home from "./pages/home.tsx";
 import Blog from "./pages/Blog.tsx";
+import Home from "./pages/Home.tsx";
 
 const router = createBrowserRouter([
   {
