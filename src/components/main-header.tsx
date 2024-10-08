@@ -1,11 +1,9 @@
+"use client"
+
 import { useState } from "react";
 
-interface MainHeaderProps {
-  UserSession: any;
-}
 
-
-const MainHeader = ({UserSession}: MainHeaderProps) => {
+const MainHeader = () => {
 
   const [toggler, setToggler] = useState<boolean>(false);
   const isLoggeed = true;
